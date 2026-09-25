@@ -1,0 +1,26 @@
+digraph UseCase {
+  graph [rankdir=LR, bgcolor="white", pad=0.3, nodesep=0.55, ranksep=1.0];
+  node [fontname="Arial", fontsize=10];
+  buyer [shape=box, style="rounded,filled", fillcolor="#E8F1FF", label="Buyer"];
+  seller [shape=box, style="rounded,filled", fillcolor="#EAF8EF", label="Seller"];
+  admin [shape=box, style="rounded,filled", fillcolor="#FFF3DE", label="Admin"];
+  subgraph cluster_uc {
+    label="NexoraMart Use Cases"; color="#CBD5E0"; style="rounded";
+    node [shape=ellipse, style="filled", fillcolor="#F7FAFC", color="#718096"];
+    auth [label="Register / Login"];
+    browse [label="Browse / Search / Filter"];
+    product [label="View Product"];
+    cart [label="Manage Cart"];
+    checkout [label="Place Order"];
+    history [label="Order History / Cancel"];
+    review [label="Rate / Review"];
+    manage [label="Manage Products"];
+    status [label="Update Order Status"];
+    moderate [label="Moderate Users / Products / Orders"];
+    audit [label="View Audit Logs"];
+    analytics [label="View Analytics"];
+  }
+  buyer -> auth; buyer -> browse; buyer -> product; buyer -> cart; buyer -> checkout; buyer -> history; buyer -> review;
+  seller -> auth; seller -> manage; seller -> status; seller -> review;
+  admin -> auth; admin -> moderate; admin -> audit; admin -> analytics;
+}

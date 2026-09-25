@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1020"/><stop offset="1" stop-color="#39b6ff"/></linearGradient></defs>
+<rect width="900" height="650" rx="38" fill="url(#g)"/>
+<circle cx="760" cy="110" r="120" fill="#ffffff" opacity=".09"/>
+<circle cx="160" cy="540" r="160" fill="#ffffff" opacity=".06"/>
+<g transform="translate(120 86)">
+  <rect x="100" y="80" width="590" height="360" rx="40" fill="#121a2e" stroke="#ffffff" stroke-opacity=".16" stroke-width="3"/>
+  <rect x="125" y="105" width="540" height="310" rx="28" fill="#09101e"/>
+  <rect x="165" y="145" width="460" height="210" rx="22" fill="#39b6ff" opacity=".20"/>
+  <circle cx="220" cy="200" r="28" fill="#39b6ff" opacity=".88"/><circle cx="280" cy="245" r="20" fill="#fff" opacity=".25"/>
+  <path d="M180 335 Q390 150 620 335" stroke="#39b6ff" stroke-width="18" fill="none" opacity=".75"/>
+  <text x="155" y="470" font-family="Arial" font-size="28" fill="#fff" font-weight="700">NEXORA</text>
+</g>
+<text x="52" y="58" font-family="Arial" font-size="24" fill="#cbd5ff" letter-spacing="4">SMART CAMPUS STORE</text>
+<text x="52" y="585" font-family="Arial" font-size="28" fill="#ffffff" font-weight="700">Nexora Wireless Buds</text>
+<text x="52" y="615" font-family="Arial" font-size="18" fill="#cbd5ff">ANGLED STUDIO VIEW · IMAGE 2/3</text>
+</svg>

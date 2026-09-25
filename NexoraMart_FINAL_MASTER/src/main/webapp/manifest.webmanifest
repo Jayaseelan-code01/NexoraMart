@@ -1,0 +1,9 @@
+{
+  "name":"NexoraMart Smart Campus Marketplace",
+  "short_name":"NexoraMart",
+  "start_url":"./marketplace",
+  "display":"standalone",
+  "background_color":"#070b15",
+  "theme_color":"#7c5cff",
+  "description":"Smart campus marketplace with explainable product matching, compare, wishlist and assistant."
+}

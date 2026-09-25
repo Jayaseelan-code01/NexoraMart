@@ -1,0 +1,20 @@
+digraph Sequence {
+  graph [rankdir=LR, bgcolor="white", pad=0.3, nodesep=0.4, ranksep=0.7];
+  node [shape=box, fontname="Arial", fontsize=10, style="rounded,filled", fillcolor="#EEF5FF", color="#355C9A"];
+  edge [fontname="Arial", fontsize=9, color="#4A5568"];
+  browser [label="Browser"];
+  servlet [label="CheckoutServlet"];
+  service [label="OrderService"];
+  dao [label="OrderDAO / ProductDAO"];
+  db [label="H2 Database"];
+  browser -> servlet [label="POST checkout"];
+  servlet -> service [label="placeOrder(user, cart)"];
+  service -> db [label="BEGIN TRANSACTION"];
+  service -> dao [label="validate stock / persist order"];
+  dao -> db [label="PreparedStatements"];
+  db -> dao [label="rows / generated ids"];
+  dao -> service [label="order created"];
+  service -> db [label="COMMIT + clear cart"];
+  service -> servlet [label="order reference"];
+  servlet -> browser [label="confirmation page"];
+}
